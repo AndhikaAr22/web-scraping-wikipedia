@@ -20,6 +20,7 @@ class Wikipedia:
             print("Failed to find the table in the HTML")
             return None
         rows = table.find_all('tr')
+        print(rows)
         return rows
 
     def get_data(self):
@@ -42,5 +43,5 @@ class Wikipedia:
             }
             data.append(values)
         json_rows = json.dumps(data, indent=4)
-        # print(json_rows)
+        print(json_rows)
         return data
