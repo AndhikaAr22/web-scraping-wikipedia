@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+pandas
+SQLAlchemy
+boto3
+python-dotenv
